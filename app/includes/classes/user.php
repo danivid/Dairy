@@ -4,7 +4,7 @@ class User extends Db_object{
 
 	protected static $db_table = "users";
 
-	protected static $db_table_fields = array('id', 'username', 'password', 'first_name', 'middle_name', 'last_name', 'user_image');
+	protected static $db_table_fields = array('username', 'password', 'first_name', 'middle_name', 'last_name', 'user_image');
 
 	public $id;
 	public $username;
@@ -22,7 +22,6 @@ class User extends Db_object{
 
 		$sql = "SELECT * FROM " . self::$db_table . " WHERE ";
 		$sql .= "username = '{$username}' ";
-		$sql .= "AND status = 1 ";
 		$sql .= "LIMIT 1";
 
 		$the_result_array = self::find_by_query($sql);
