@@ -11,19 +11,36 @@
     <!-- Title -->
     <title>
     <?php
+        // IF ON MAIN PAGE
         if (true) {
             echo true ? "Diary | Welcome" : "Diary | Home";
+        // IF ON MOOD PAGE
         } else if (false) {
-            echo "Diary | Feelings";
+            echo "Diary | Mood";
         }
     ?>
     </title>
 
     <!-- Page description -->
-    <meta name="description" content="Description of the page less than 150 characters">
+    <meta name="description"
+    <?php
+        // IF ON MAIN PAGE
+        if (true) {
+            echo "content=\"Description\"";
+        // IF ON MOOD PAGE
+        } else if (false) {
+            echo "content=\"Description\"";
+        }
+    ?>
+    >
 
     <!-- Icon -->
     <link rel="icon" type="assets/image/png" href="favicon.png">
 
+    <!-- Css -->
+    <link rel="stylesheet" href="app/assets/css/main.css">
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>

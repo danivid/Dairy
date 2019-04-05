@@ -1,0 +1,82 @@
+// Navbar
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.navbar {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    display: flex;
+
+    box-shadow: $shadow-elevation-1;
+    height: 100%;
+    width: $size-8;
+
+    background-color: $color-dark;
+}
+
+.navbar nav {
+    flex-direction: column;
+    justify-content: center;
+
+    display: flex;
+
+    width: 100%;
+}
+
+.navbar .sign {
+    width: 100%
+}
+
+.navbar {
+
+    .home-icon,
+    .mood-icon,
+    .sign-icon {
+        justify-content: center;
+        align-items: center;
+
+        display: flex;
+
+        transition: 0.3s background-color;
+
+        width: 100%;
+        height: $size-8;
+
+        cursor: pointer;
+
+        font-size: $size-6;
+        color: $color-grayscale-300;
+    }
+
+    .mood-icon {
+        &.-very-happy {
+            color: rgb(0, 187, 0);
+        }
+
+        &.-happy {
+            color: rgb(0, 182, 112);
+        }
+
+        &.-neutral {
+            color: rgb(0, 224, 194);
+        }
+
+        &.-sad {
+            color: rgb(0, 128, 214);
+        }
+
+        &.-very-sad {
+            color: rgb(110, 70, 255);
+        }
+    }
+}
+
+.navbar .home-icon:hover,
+.navbar .mood-icon:hover,
+.navbar .sign-icon:hover {
+    background-color: $color-grayscale-800;
+}

@@ -6,7 +6,11 @@
 <body>
     <main>
         <?php include("app/includes/views/navbar.php") ?>
-        <?php // true ? include("app/includes/views/navbar.php") : include("app/includes/views/navbar.php") ?>
+
+        <!-- IF LOGGED IN -->
+        <?php // true ? include("app/includes/views/home.php") : include("app/includes/views/welcome.php") ?>
+
+        <!-- IF LOGGED IN -->
         <?php // true && include("app/includes/views/filter.php") ?>
     <main>
 
