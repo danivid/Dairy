@@ -1,0 +1,53 @@
+// Font - Module
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Font family - Topic
+// –––––––––––––––––––
+
+// Families
+$font-family-base:                  sans-serif !default;
+$font-family-secondary:             sans-serif !default;
+$font-family-stack:                 "-apple-system", "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Cantarell", "Helvetica Neue" !default;
+
+// Font size - Topic
+// –––––––––––––––––
+
+// Steps
+$font-size-1:                       1.2rem !default;
+$font-size-2:                       1.4rem !default;
+$font-size-3:                       1.6rem !default;
+$font-size-4:                       1.8rem !default;
+$font-size-5:                       2.0rem !default;
+$font-size-6:                       2.4rem !default;
+$font-size-7:                       3.0rem !default;
+$font-size-8:                       3.6rem !default;
+$font-size-9:                       4.8rem !default;
+$font-size-10:                      6.0rem !default;
+$font-size-11:                      7.2rem !default;
+
+// Font weight - Topic
+// –––––––––––––––––––
+
+// Weights
+$font-weight-light:                 100 !default;
+$font-weight-normal:                300 !default;
+$font-weight-bold:                  700 !default;
+
+
+// Line height - Topic
+// –––––––––––––––––––
+
+// Steps
+$line-height-1:                     1.00 !default;
+$line-height-2:                     1.25 !default;
+$line-height-3:                     1.50 !default;
+$line-height-4:                     1.75 !default;
+$line-height-5:                     2.00 !default;
+
+// Letter spacing - Topic
+// ––––––––––––––––––––––
+
+// Spacing
+$letter-spacing-tight:              -0.05em !default;
+$letter-spacing-normal:             0 !default;
+$letter-spacing-open:               0.05em !default;

@@ -1,0 +1,26 @@
+// Divider
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+	margin: 3rem 0;
+	border: 0;
+	border-top: 0.1rem solid $color-grayscale-500;
+}
+
+hr[data-content] {
+    position: relative;
+
+    &::after {
+        content: attr(data-content);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+
+        background: var(--background-color);
+    }
+}

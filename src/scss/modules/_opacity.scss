@@ -1,0 +1,19 @@
+// Opacity - Module
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Opacities
+$opacity-hidden:                    0 !default;
+$opacity-visible:                   1 !default;
+
+// Steps
+$opacity-0:                         $opacity-hidden !default;
+$opacity-1:                         0.10 !default;
+$opacity-2:                         0.20 !default;
+$opacity-3:                         0.30 !default;
+$opacity-4:                         0.40 !default;
+$opacity-5:                         0.50 !default;
+$opacity-6:                         0.60 !default;
+$opacity-7:                         0.70 !default;
+$opacity-8:                         0.80 !default;
+$opacity-9:                         0.90 !default;
+$opacity-10:                        $opacity-visible !default;

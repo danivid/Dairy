@@ -1,0 +1,16 @@
+// Link
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+	text-decoration: none;
+	color: $color-primary-500;
+
+	&:hover,
+	&:focus {
+		color: $color-primary-700;
+	}
+
+	&:active {
+		color: $color-primary-300;
+	}
+}

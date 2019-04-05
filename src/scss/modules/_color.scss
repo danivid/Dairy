@@ -1,0 +1,117 @@
+// Color - Module
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// All shades and base colors MUST be hand picked
+
+// Primary - Topic
+// –––––––––––––––
+
+// Base
+$color-primary-base:                hsl(230, 50%, 50%) !default;
+
+// Shades
+$color-primary-100:                 hsl(230, 100%, 71%) !default;
+$color-primary-200:                 hsl(230, 72%, 56%) !default;
+$color-primary-300:                 hsl(230, 57%, 49%) !default;
+$color-primary-400:                 hsl(230, 59%, 46%) !default;
+$color-primary-500:                 $color-primary-base !default;
+$color-primary-600:                 hsl(230, 56%, 36%) !default;
+$color-primary-700:                 hsl(230, 68%, 23%) !default;
+$color-primary-800:                 hsl(229, 74%, 12%) !default;
+$color-primary-900:                 hsl(232, 96%, 11%) !default;
+
+// Secondary ( Optional ) - Topic
+// ––––––––––––––––––––––––––––––
+
+// Base
+$color-secondary-base:              hsl(275, 50%, 50%) !default;
+
+// Shades
+$color-secondary-100:               hsl(275, 100%, 72%) !default;
+$color-secondary-200:               hsl(275, 89%, 65%) !default;
+$color-secondary-300:               hsl(275, 62%, 58%) !default;
+$color-secondary-400:               hsl(275, 51%, 51%) !default;
+$color-secondary-500:               $color-secondary-base !default;
+$color-secondary-600:               hsl(275, 54%, 40%) !default;
+$color-secondary-700:               hsl(275, 61%, 26%) !default;
+$color-secondary-800:               hsl(274, 69%, 17%) !default;
+$color-secondary-900:               hsl(275, 91%, 13%) !default;
+
+// Grayscale - Topic
+// –––––––––––––––––––
+
+// Base
+$color-grayscale-base:              hsl(200, 25%, 75%) !default;
+
+// Shades
+$color-grayscale-100:               hsl(200, 25%, 75%) !default;
+$color-grayscale-200:               hsl(200, 25%, 75%) !default;
+$color-grayscale-300:               hsl(200, 25%, 75%) !default;
+$color-grayscale-400:               hsl(200, 25%, 75%) !default;
+$color-grayscale-500:               $color-grayscale-base !default;
+$color-grayscale-600:               hsl(200, 25%, 75%) !default;
+$color-grayscale-700:               hsl(200, 25%, 75%) !default;
+$color-grayscale-800:               hsl(200, 25%, 75%) !default;
+$color-grayscale-900:               hsl(200, 25%, 75%) !default;
+
+// Accent - Topic
+// –––––––––––––––––––
+
+// Highlight base
+$color-highlight-base:              hsl(160, 50%, 50%) !default;
+
+// Highlight shades
+$color-highlight-100:               hsl(160, 50%, 50%) !default;
+$color-highlight-200:               hsl(160, 50%, 50%) !default;
+$color-highlight-300:               hsl(160, 50%, 50%) !default;
+$color-highlight-400:               hsl(160, 50%, 50%) !default;
+$color-highlight-500:               $color-highlight-base !default;
+$color-highlight-600:               hsl(160, 50%, 50%) !default;
+$color-highlight-700:               hsl(160, 50%, 50%) !default;
+$color-highlight-800:               hsl(160, 50%, 50%) !default;
+$color-highlight-900:               hsl(160, 50%, 50%) !default;
+
+
+// Positive base
+$color-positive-base:               hsl(115, 50%, 50%) !default;
+
+// Positive shades
+$color-positive-100:                hsl(115, 50%, 50%) !default;
+$color-positive-200:                hsl(115, 50%, 50%) !default;
+$color-positive-300:                hsl(115, 50%, 50%) !default;
+$color-positive-400:                hsl(115, 50%, 50%) !default;
+$color-positive-500:                $color-positive-base !default;
+$color-positive-600:                hsl(115, 50%, 50%) !default;
+$color-positive-700:                hsl(115, 50%, 50%) !default;
+$color-positive-800:                hsl(115, 50%, 50%) !default;
+$color-positive-900:                hsl(115, 50%, 50%) !default;
+
+
+// Warning base
+$color-warning-base:                hsl(60, 50%, 50%) !default;
+
+// Warning shades
+$color-warning-100:                 hsl(60, 50%, 50%) !default;
+$color-warning-200:                 hsl(60, 50%, 50%) !default;
+$color-warning-300:                 hsl(60, 50%, 50%) !default;
+$color-warning-400:                 hsl(60, 50%, 50%) !default;
+$color-warning-500:                 $color-warning-base !default;
+$color-warning-600:                 hsl(60, 50%, 50%) !default;
+$color-warning-700:                 hsl(60, 50%, 50%) !default;
+$color-warning-800:                 hsl(60, 50%, 50%) !default;
+$color-warning-900:                 hsl(60, 50%, 50%) !default;
+
+
+// Negative base
+$color-negative-base:               hsl(0, 50%, 50%) !default;
+
+// Negative shades
+$color-negative-100:                hsl(0, 50%, 50%) !default;
+$color-negative-200:                hsl(0, 50%, 50%) !default;
+$color-negative-300:                hsl(0, 50%, 50%) !default;
+$color-negative-400:                hsl(0, 50%, 50%) !default;
+$color-negative-500:                $color-negative-base !default;
+$color-negative-600:                hsl(0, 50%, 50%) !default;
+$color-negative-700:                hsl(0, 50%, 50%) !default;
+$color-negative-800:                hsl(0, 50%, 50%) !default;
+$color-negative-900:                hsl(0, 50%, 50%) !default;

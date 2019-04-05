@@ -1,0 +1,33 @@
+// Base - Partial
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// 1. Set box-sizing globally to handle padding and border widths. [Opinionated]
+// 2. Removes all default margin and padding. [Opinionated]
+// 3. The base font-size is set at 62.5% to make REM emulate 10px. [Opinionated]
+*,
+*:after,
+*:before {
+    margin: 0; // 2
+    box-sizing: inherit; // 1
+    padding: 0; // 2
+}
+
+html {
+	box-sizing: border-box; // 1
+
+	font-size: 62.5%; // 3
+}
+
+// Default body styles
+// 1. Lets the page always take full height even if the content does not fill it up. [Opinionated]
+body {
+    flex-direction: column; // 1
+
+	display: flex; // 1
+
+    min-height: 100vh; // 1
+}
+
+main {
+    flex: 1; // 1
+}
