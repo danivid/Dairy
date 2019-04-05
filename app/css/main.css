@@ -315,7 +315,7 @@ hr[data-content] {
             transform: translate(-50%, -50%);
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-    background: var(--background-color); }
+    background: transparent; }
 
 img {
   max-width: 100%; }
