@@ -41,18 +41,19 @@ $color-secondary-900:               hsl(275, 91%, 13%) !default;
 // –––––––––––––––––––
 
 // Base
-$color-grayscale-base:              hsl(200, 25%, 75%) !default;
+$color-grayscale-base:              hsl(210, 11%, 71%) !default;
 
-// Shades
-$color-grayscale-100:               hsl(200, 25%, 75%) !default;
-$color-grayscale-200:               hsl(200, 25%, 75%) !default;
-$color-grayscale-300:               hsl(200, 25%, 75%) !default;
-$color-grayscale-400:               hsl(200, 25%, 75%) !default;
+$color-light:                       hsl(0, 0%, 98%) !default;
+$color-grayscale-100:               hsl(210, 17%, 98%) !default;
+$color-grayscale-200:               hsl(210, 16%, 93%) !default;
+$color-grayscale-300:               hsl(210, 14%, 89%) !default;
+$color-grayscale-400:               hsl(210, 14%, 83%) !default;
 $color-grayscale-500:               $color-grayscale-base !default;
-$color-grayscale-600:               hsl(200, 25%, 75%) !default;
-$color-grayscale-700:               hsl(200, 25%, 75%) !default;
-$color-grayscale-800:               hsl(200, 25%, 75%) !default;
-$color-grayscale-900:               hsl(200, 25%, 75%) !default;
+$color-grayscale-600:               hsl(208, 7%, 46%) !default;
+$color-grayscale-700:               hsl(210, 9%, 31%) !default;
+$color-grayscale-800:               hsl(210, 10%, 23%) !default;
+$color-grayscale-900:               hsl(210, 11%, 15%) !default;
+$color-dark:                        hsl(0, 0%, 12%) !default;
 
 // Accent - Topic
 // –––––––––––––––––––

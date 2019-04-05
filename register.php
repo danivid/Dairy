@@ -1,6 +1,6 @@
 <?php 
 
-require_once("app/includes/views/header.php");
+require_once("app/includes/views/navbar.php");
 
 //if ($session->is_signed_in()) {redirect("index.php");}
 

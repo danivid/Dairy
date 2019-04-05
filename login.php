@@ -1,6 +1,6 @@
 <?php 
 
-include("app/includes/views/header.php"); 
+include("app/includes/views/navbar.php"); 
 
 //if ($session->is_signed_in()) {header("Location: index.php");}
 
