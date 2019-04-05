@@ -223,8 +223,6 @@ class Db_object {
 			$this->id = $database->the_insert_id();
 			$user_id = isset($session->user_id) ? $session->user_id : $this->id;
 
-			$log = $this->log_user_activity("create", $user_id, $this->id, static::$db_table);
-
 			return true;
 
 		} else {
@@ -263,7 +261,6 @@ class Db_object {
 		$sql .= " WHERE id= " . $database->escape_string($this->id);
 
 		$database->query($sql);
-		//$log = $this->log_user_activity("update", $session->user_id, $this->id, static::$db_table);
 		return (mysqli_affected_rows($database->connection) == 1) ? true : false;
 
 	}
@@ -284,7 +281,6 @@ class Db_object {
 		$sql .= " LIMIT 1";
 
 		$database->query($sql);
-	    $log = $this->log_user_activity("delete", $session->user_id, $this->id, static::$db_table);
 		return (mysqli_affected_rows($database->connection) == 1) ? true : false;
 
 	}

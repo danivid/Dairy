@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
 
 	if ($user_found) {
 		$session->login($user_found);
-		header("Location: index.php");
+		redirect("index.php");
 
 	} else {
 		echo "error";
