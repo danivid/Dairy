@@ -1,4 +1,4 @@
-<?php require_once("app/includes/init.php"); ?>
+<?php require_once("includes/init.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
 
     <?php
 
-        include("app/includes/helpers/head.php");
+        include("includes/helpers/head.php");
     ?>
 
 </head>
