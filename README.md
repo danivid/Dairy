@@ -1,2 +1,2 @@
-# Dairy
+# Diary
 A diary web application
