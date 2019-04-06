@@ -1,6 +1,6 @@
 <?php 
-
-include("app/includes/views/navbar.php"); 
+require_once("includes/init.php");
+include("includes/views/navbar.php"); 
 
 //if ($session->is_signed_in()) {header("Location: index.php");}
 
@@ -45,4 +45,4 @@ if (isset($_POST['submit'])) {
 
 
 
-<?php include("app/includes/views/footer.php"); ?>
+<?php include("includes/views/footer.php"); ?>

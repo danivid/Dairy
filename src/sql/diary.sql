@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 05. Apr, 2019 22:12 PM
+-- Generation Time: 06. Apr, 2019 04:06 AM
 -- Tjener-versjon: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -31,8 +31,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `page` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `text` text NOT NULL,
-  `feeling` tinyint(4) NOT NULL
+  `text` blob NOT NULL,
+  `mood` tinyint(4) NOT NULL,
+  `date` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -85,7 +86,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `page`
 --
 ALTER TABLE `page`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
