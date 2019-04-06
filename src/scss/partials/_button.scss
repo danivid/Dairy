@@ -8,13 +8,13 @@ input[type="reset"],
 input[type="submit"] {
 	display: inline-block;
 
-	transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+	transition: border-color 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
 
-	border: $border-1 solid $color-grayscale-600;
+	border: $border-1 solid $color-primary-600;
 	border-radius: $border-radius-rounded;
 	padding: $spacing-3 $spacing-4;
 
-	background-color: $color-grayscale-600;
+	background-color: $color-primary-600;
 	cursor: pointer;
 	user-select: none;
 
@@ -28,14 +28,15 @@ input[type="submit"] {
 
 	&:focus,
 	&:hover {
+		box-shadow: $shadow-elevation-2;
 		outline: 0;
-		border-color: $color-grayscale-700;
+		border-color: $color-primary-700;
 
-		background-color: $color-grayscale-700;
+		background-color: $color-primary-700;
 	}
 
 	&:active {
-		transform: scale(0.1, 0,1)
+		box-shadow: none;
 	}
 
 	&[disabled] {
@@ -55,15 +56,22 @@ input[type="submit"] {
 	&.-outline {
 		background-color: transparent;
 
-		color: $color-grayscale-600;
+		color: $color-primary-600;
 
 		&:focus,
 		&:hover {
-			border-color: $color-grayscale-700;
+			box-shadow: none;
+			border-color: $color-primary-400;
 
 			background-color: transparent;
 
-			color: $color-grayscale-700;
+			color: $color-primary-400;
+		}
+
+		&:active {
+			border-color: $color-primary-700;
+
+			color: $color-primary-700;
 		}
 
 		&[disabled] {
@@ -77,19 +85,24 @@ input[type="submit"] {
 	}
 
 	&.-clear {
+		box-shadow: none;
 		border-color: transparent;
 
 		background-color: transparent;
 
-		color: $color-grayscale-600;
+		color: $color-primary-600;
 
 		&:focus,
 		&:hover {
 			border-color: transparent;
 
-			background-color: rgba($color-grayscale-500, $opacity-2);
+			background-color: rgba($color-primary-500, $opacity-1);
 
-			color: $color-grayscale-700;
+			color: $color-primary-400;
+		}
+
+		&:active {
+			color: $color-primary-700;
 		}
 
 		&[disabled] {
