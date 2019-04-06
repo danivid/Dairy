@@ -194,6 +194,28 @@ main {
       -ms-flex: 1;
           flex: 1; }
 
+.avatar {
+  background-image: url(/img/backup.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fafafa;
+  border-radius: 50%;
+  width: 3.8rem;
+  height: 3.8rem; }
+  .avatar.-xl {
+    width: 6.4rem;
+    height: 6.4rem; }
+  .avatar.-l {
+    width: 4.8rem;
+    height: 4.8rem; }
+  .avatar.-s {
+    width: 3.2rem;
+    height: 3.2rem; }
+  .avatar.-xs {
+    width: 2rem;
+    height: 2rem; }
+
 .button,
 button,
 input[type="button"],
@@ -618,23 +640,24 @@ a {
   cursor: pointer;
   font-size: 3.2rem;
   color: #dfe3e7; }
-.navbar .mood-icon > a {
-  color: #fafafa; }
-.navbar .mood-icon.-very-happy {
+.navbar .mood-icon.-active.-very-happy {
   color: #00bb00; }
-.navbar .mood-icon.-happy {
+.navbar .mood-icon.-active.-happy {
   color: #00b670; }
-.navbar .mood-icon.-neutral {
+.navbar .mood-icon.-active.-neutral {
   color: #00e0c2; }
-.navbar .mood-icon.-sad {
+.navbar .mood-icon.-active.-sad {
   color: #0080d6; }
-.navbar .mood-icon.-very-sad {
+.navbar .mood-icon.-active.-very-sad {
   color: #6e46ff; }
 
 .navbar .home-icon:hover,
 .navbar .mood-icon:hover,
 .navbar .sign-icon:hover {
   background-color: #353b41; }
+
+.navbar .sign-icon > a {
+  color: #dfe3e7; }
 
 hr[data-content] {
   position: relative; }

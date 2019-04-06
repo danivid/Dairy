@@ -22,6 +22,11 @@
                     <input required type="password" name="password" id="password">
                 </div>
 
+                <div>
+                    <label for="image">Image</label>
+                    <input required type="file" name="image" id="image">
+                </div>
+
                 <div class="form-buttons">
                     <input type="submit" name="submit" id="submit" value="Sign up">
                 </div>

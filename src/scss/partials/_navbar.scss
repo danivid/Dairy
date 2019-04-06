@@ -53,12 +53,7 @@
         color: $color-grayscale-300;
     }
 
-    .mood-icon {
-
-        > a {
-            color: $color-light;
-        }
-
+    .mood-icon.-active {
 
         &.-very-happy {
             color: rgb(0, 187, 0);
@@ -86,4 +81,8 @@
 .navbar .mood-icon:hover,
 .navbar .sign-icon:hover {
     background-color: $color-grayscale-800;
+}
+
+.navbar .sign-icon > a {
+    color: $color-grayscale-300;
 }
