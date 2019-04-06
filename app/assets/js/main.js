@@ -44,6 +44,26 @@ function save_page() {
 }
 
 
+/* Opens login modal */
+const SIGN_IN = document.getElementById('SIGN_IN');
+const LOGIN_MODAL = document.getElementById('LOGIN_MODAL');
+const LOGIN_MODAL_CLOSE = document.getElementById('LOGIN_MODAL_CLOSE');
+const LOGIN_MODAL_BACKDROP =
+
+SIGN_IN.addEventListener('click', e => {
+    LOGIN_MODAL.classList.toggle('-show');
+});
+
+LOGIN_MODAL_CLOSE.addEventListener('click', e => {
+    LOGIN_MODAL.classList.toggle('-show');
+});
+
+LOGIN_MODAL.addEventListener('click', e => {
+    if(e.target !== e.currentTarget) return;
+    LOGIN_MODAL.classList.toggle('-show');
+});
+
+
 
 
 
