@@ -13,17 +13,17 @@
 		
 		if ($date_month_check !== $date_month) {
 
-			if ($check != 0) {	// If $check is not zero, then echo a end to page-previous-grid.
+			if ($check != 0) {							// If $check is not zero, then echo a end to page-previous-grid.
 				echo '</div>';
 			}
-			$check = 1;	// To make sure that the /div goes trough next time.
+			$check = 1;									// To make sure that the /div goes trough next time.
 
 			echo '<hr data-content="' . $date_month .'">';
 			echo '<div class="page-preview-grid">';
 			
 		}
 
-		switch ($page_mood) {
+		switch ($page_mood) {							// Places here the color in the classlist of the page-preview.
 			case 1:
 				$mood = " -very-sad";
 				break;
@@ -45,14 +45,11 @@
 				break;
 		}
 
-		// decide if the year have changed.
-		// Decide if the month have changed.
-
-
 		echo '<a href="page" class="page-preview">';
 		echo '<div class="page-preview-header ' . $mood . '">';
 		echo '<span>' . $date . '</span>';
 
+		// Decides which of the smiles will be used on the current card.
 		if ($page_mood == 5) {
 			echo "<i class=\"fas fa-fw fa-laugh-beam\"></i>";
 		} else if ($page_mood == 4) {
@@ -69,12 +66,9 @@
 		echo '<div class="page-preview-body">'. $page_text . '...' . '</div>';
 		echo '</a>';
 
-
+		// Make's the date_month_check equal to the date_month.
 		$date_month_check = $date_month;
 		?>
-
-
-
 
 	<?php endforeach; ?>
 
