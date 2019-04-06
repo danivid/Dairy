@@ -37,8 +37,6 @@ if (isset($_POST['submit'])) {
         <?php // true && include("app/includes/views/filter.php") ?>
 
     <main>
-
-    <?php include("includes/views/footer.php") ?>
 </body>
 </html>
 

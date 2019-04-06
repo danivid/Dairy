@@ -655,15 +655,15 @@ a {
   cursor: pointer;
   font-size: 3.2rem;
   color: #dfe3e7; }
-.navbar .mood-icon.-active.-very-happy {
+.navbar .mood-icon.-very-happy {
   color: #00bb00; }
-.navbar .mood-icon.-active.-happy {
+.navbar .mood-icon.-happy {
   color: #00b670; }
-.navbar .mood-icon.-active.-neutral {
+.navbar .mood-icon.-neutral {
   color: #00e0c2; }
-.navbar .mood-icon.-active.-sad {
+.navbar .mood-icon.-sad {
   color: #0080d6; }
-.navbar .mood-icon.-active.-very-sad {
+.navbar .mood-icon.-very-sad {
   color: #6e46ff; }
 
 .navbar .home-icon:hover,
@@ -673,6 +673,9 @@ a {
 
 .navbar .sign-icon > a {
   color: #dfe3e7; }
+
+.fr-view {
+  height: calc(80vh - 10rem); }
 
 hr[data-content] {
   position: relative; }
@@ -835,5 +838,4 @@ h6 {
     width: 80%;
     max-width: 51.2rem;
     background-color: #eaedf0; }
-
 /*# sourceMappingURL=main.css.map */
