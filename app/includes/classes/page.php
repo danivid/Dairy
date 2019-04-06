@@ -1,5 +1,10 @@
 <?php 
 
+/**
+ * The page class
+ *
+ */
+
 class Page extends Db_object{
 
 	protected static $db_table = "page"; 
