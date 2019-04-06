@@ -14,6 +14,7 @@
         <?php // true && include("app/includes/views/filter.php") ?>
 
         <?php include("includes/views/page.php"); ?>
+
     <main>
 
     <?php include("includes/views/footer.php") ?>
