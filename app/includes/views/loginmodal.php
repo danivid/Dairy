@@ -3,7 +3,7 @@
         <form method="post" class="form" >
             <div class="modal-header">
                 <div>Welcome!</div>
-                <div class="close" id="LOGIN_MODAL_CLOSE"></div>
+                <div class="close -invert" id="LOGIN_MODAL_CLOSE"></div>
             </div>
 
             <div class="modal-body">
@@ -18,8 +18,8 @@
                 </div>
 
                 <div class="form-buttons">
-                    <button class="button -clear">Register</button>
-                    <input type="submit" name="submit" id="submit" class="button-contained" value="submit">
+                    <a href="index.php#SIGN_UP" class="button -clear" id="SIGN_UP_CLOSE_MODAL">Sign up</a>
+                    <input type="submit" name="submit" id="submit" value="Sign in">
                 </div>
             </div>
         </form>

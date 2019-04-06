@@ -54,6 +54,12 @@
     }
 
     .mood-icon {
+
+        > a {
+            color: $color-light;
+        }
+
+
         &.-very-happy {
             color: rgb(0, 187, 0);
         }

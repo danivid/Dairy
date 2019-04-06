@@ -15,7 +15,9 @@
 html {
 	box-sizing: border-box; // 1
 
-	font-size: 62.5%; // 3
+    font-size: 62.5%; // 3
+
+    scroll-behavior: smooth;
 }
 
 // Default body styles

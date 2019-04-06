@@ -1,7 +1,7 @@
 <div class="navbar">
     <nav>
 
-        <?php 
+        <?php
         if ($session->is_signed_in()) {
             $user = User::find_by_id($session->user_id);
             $user_image = $user->user_image;
@@ -17,12 +17,12 @@
         <!-- IF ON THIS PAGE -->
         <a <?php echo false ? "" : "href=\"index.php\"" ?> class="home-icon" ><?php echo true ? "<i class=\"fas fa-fw fa-book\"></i>" : "<i class=\"fas fa-fw fa-book-open\"></i>" ?></a>
 
-        <?php 
+        <?php
         /**
          * This is the mood-face that will show when someone is logged
-         * onto the page, nothing will show if not. The mood face is 
+         * onto the page, nothing will show if not. The mood face is
          * currently the average of the days the user have input'ed.
-         */ 
+         */
         if ($session->is_signed_in()) :
 
             $rounded_avg = 0;
@@ -52,18 +52,18 @@
                 echo "<i class=\"fas fa-fw fa-laugh-beam\"></i>";
             } else if ($rounded_avg == 4) {
                 echo "<i class=\"fas fa-fw fa-smile\"></i>";
-            } else if ($rounded_avg == 3) {
+            } else if ($rounded_avg == 3 || $rounded_avg == 0) {
                 echo "<i class=\"fas fa-fw fa-meh\"></i>";
             } else if ($rounded_avg == 2) {
                 echo "<i class=\"fas fa-fw fa-frown\"></i>";
             } else if ($rounded_avg == 1) {
                 echo "<i class=\"fas fa-fw fa-sad-cry\"></i>";
-            } else {echo "None";}
+            }
             ?>
             </a>
-         
+
         <?php endif;?>
-    
+
 </nav>
 
 <div id="sign" class="sign">

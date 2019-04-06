@@ -9,11 +9,11 @@
     height: $size-5;
 
     &:hover {
-        background-color: rgba($color-dark, $opacity-1);
+        background-color: rgba($color-dark, $opacity-2);
     }
 
     &:active {
-        background-color: rgba($color-dark, $opacity-2);
+        background-color: rgba($color-dark, $opacity-4);
     }
 
     &::after {
@@ -27,5 +27,9 @@
         font-size: $font-size-4;
         font-weight: $font-weight-normal;
         color: $color-grayscale-800;
+    }
+
+    &.-invert::after {
+        color: $color-grayscale-200;
     }
 }
