@@ -17,28 +17,48 @@
     &.-show {
         display: block;
 
-        & > .modal-content {
+        & > .modal-frame {
             display: block;
 
             animation: modal 1s;
         }
     }
 
-    & .modal-content {
+    & .modal-frame {
         z-index: 1001;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
+        overflow: hidden;
+
         display: none;
 
         box-shadow: $shadow-elevation-1;
         border-radius: $border-radius-rounded;
-        padding: $size-5;
         width: 80%;
         max-width: $size-14;
 
         background-color: $color-grayscale-200;
+
+        & .modal-header {
+            justify-content: space-between;
+            align-content: center;
+
+            display: flex;
+
+            padding: $size-5;
+
+            background-color: $color-grayscale-500;
+
+            font-size: $font-size-6;
+            font-weight: $font-weight-normal;
+
+        }
+
+        & .modal-body {
+            padding: $size-5;
+        }
     }
 }
