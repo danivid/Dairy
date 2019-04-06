@@ -23,7 +23,7 @@ class Page extends Db_object{
 
 		$sql = "SELECT * FROM " . self::$db_table . " WHERE ";
 		$sql .= "user_id = '{$user_id}' ";
-		$sql .= "ORDER BY date";
+		$sql .= "ORDER BY date DESC";
 
 		return static::find_by_query($sql);
 
