@@ -1,0 +1,13 @@
+@keyframes modal {
+    from {
+      opacity: 0;
+      -webkit-transform: translate(-50%, -150%);
+      tranform: translate(-50%, -150%);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate(-50%, -50%);
+      tranform: translate(-50%, -50%);
+    }
+  }

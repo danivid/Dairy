@@ -1,0 +1,54 @@
+.form {
+
+    label {
+        display: block;
+
+        margin-bottom: $spacing-2;
+
+        font-size: $font-size-5;
+        font-weight: $font-weight-normal;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=password] {
+        display: block;
+
+        margin-bottom: $spacing-5;
+        box-shadow: $shadow-invertion-1;
+        border: none;
+        border-radius: $border-radius-rounded;
+        padding: $spacing-3 $spacing-4;
+        width: 100%;
+
+        background-color: $color-light;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus,
+    input[type=password]:focus {
+        outline: none;
+    }
+
+}
+
+.form .form-title {
+    margin-bottom: $spacing-6;
+
+    font-size: $font-size-8;
+    font-weight: $font-weight-normal;
+}
+
+.form .form-buttons {
+    justify-content: flex-end;
+
+    display: flex;
+
+    > *:not(:first-child) {
+        margin-left: $spacing-2;
+    }
+}

@@ -104,15 +104,15 @@ $color-warning-900:                 hsl(60, 50%, 50%) !default;
 
 
 // Negative base
-$color-negative-base:               hsl(0, 50%, 50%) !default;
+$color-negative-base:               hsl(0, 83%, 42%) !default;
 
 // Negative shades
-$color-negative-100:                hsl(0, 50%, 50%) !default;
-$color-negative-200:                hsl(0, 50%, 50%) !default;
-$color-negative-300:                hsl(0, 50%, 50%) !default;
-$color-negative-400:                hsl(0, 50%, 50%) !default;
+$color-negative-100:                hsl(0, 100%, 77%) !default;
+$color-negative-200:                hsl(0, 92%, 58%) !default;
+$color-negative-300:                hsl(0, 83%, 50%) !default;
+$color-negative-400:                hsl(0, 85%, 45%) !default;
 $color-negative-500:                $color-negative-base !default;
-$color-negative-600:                hsl(0, 50%, 50%) !default;
-$color-negative-700:                hsl(0, 50%, 50%) !default;
-$color-negative-800:                hsl(0, 50%, 50%) !default;
-$color-negative-900:                hsl(0, 50%, 50%) !default;
+$color-negative-600:                hsl(0, 87%, 33%) !default;
+$color-negative-700:                hsl(0, 98%, 22%) !default;
+$color-negative-800:                hsl(0, 97%, 15%) !default;
+$color-negative-900:                hsl(0, 100%, 11%) !default;

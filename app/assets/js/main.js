@@ -29,8 +29,6 @@ function get_pages_by_month(month) {
 }
 
 
-
-
 /* Gets pages by month */
 function save_page() {
 

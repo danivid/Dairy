@@ -23,7 +23,7 @@ $size-12:                        $size-base * 16.0 !default;
 $size-13:                        $size-base * 24.0 !default;
 $size-14:                        $size-base * 32.0 !default;
 $size-15:                        $size-base * 40.0 !default;
-$size-15:                        $size-base * 48.0 !default;
+$size-16:                        $size-base * 48.0 !default;
 
 // Border - Topic 
 // –––––––––––––––
@@ -44,6 +44,6 @@ $border-10:                        1.0rem !default;
 // –––––––––––––––––––––
 
 // Border radii
-$border-radius-rounded:            0.2rem !default;
+$border-radius-rounded:            0.5rem !default;
 $border-radius-pill:               100vw !default;
 $border-radius-round:              50% !default;

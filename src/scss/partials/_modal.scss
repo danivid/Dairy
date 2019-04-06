@@ -1,0 +1,44 @@
+// Modal
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.modal {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($color-dark, $opacity-6);
+
+    &.-show {
+        display: block;
+
+        & > .modal-content {
+            display: block;
+
+            animation: modal 1s;
+        }
+    }
+
+    & .modal-content {
+        z-index: 1001;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        display: none;
+
+        box-shadow: $shadow-elevation-1;
+        border-radius: $border-radius-rounded;
+        padding: $size-5;
+        width: 80%;
+        max-width: $size-14;
+
+        background-color: $color-grayscale-200;
+    }
+}
