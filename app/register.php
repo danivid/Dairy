@@ -1,6 +1,6 @@
 <?php 
-
-require_once("app/includes/views/navbar.php");
+require_once("includes/init.php");
+require_once("includes/views/navbar.php");
 
 //if ($session->is_signed_in()) {redirect("index.php");}
 
@@ -33,7 +33,13 @@ if (isset($_POST['submit'])) {
 ?>
 
 <h4><?php echo $the_message; ?></h4>
-	
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<?php include("includes/helpers/head.php") ?>
+<body>
+
 <form id="login-id" action="" method="post">
 	
 <div class="">
@@ -54,6 +60,7 @@ if (isset($_POST['submit'])) {
 	
 </div>
 
+
 <?php 
 if (!empty($error_array)) {
 	foreach ($error_array as $error_message) {
@@ -70,7 +77,7 @@ if (!empty($error_array)) {
 
 </form>
 
+<?php include("includes/views/footer.php"); ?>
 
-
-
-<?php include("app/includes/views/footer.php"); ?>
+</body>
+</html>

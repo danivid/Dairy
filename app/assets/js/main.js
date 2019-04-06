@@ -44,6 +44,15 @@ function save_page() {
     xmlhttp.send();
 }
 
+/* Gets pages by month */
+function change_image() {
+    alert("asdasda")
+    document.getElementById("picture_upload").click();
+    
+
+}
+
+
 
 /* Opens login modal */
 const SIGN_IN = document.getElementById('SIGN_IN');
@@ -63,11 +72,9 @@ LOGIN_MODAL.addEventListener('click', e => {
     LOGIN_MODAL.classList.toggle('-show');
 });
 
-
-
-
-
-
+profile_image.addEventListener('click', e => {
+    alert("casdfcdaf");
+});
 
 
 
@@ -86,7 +93,7 @@ function find_file() {
     document.getElementById('selectfile').click();
     document.getElementById('selectfile').onchange = function() {
         file = document.getElementById('selectfile').files[0];
-      avatar_upload(file);
+      //avatar_upload(file);
     };
   }
  
