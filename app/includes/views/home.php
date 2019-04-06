@@ -1,14 +1,15 @@
 <div class="home">
 <!--echo '<a href="pag" class="new-page"><i class="fas fa-fw fa-plus"></i></a>';-->
 <?php
-	$date_month_check = 0;
-	$check = 0;
+	$date_month_check = 0;								// Used to check if the month is the same as the month for the page previous.
+	$check = 0;											// Used as a rushed try to fix this page. 
 	$pages = Page::find_pages($session->user_id);
 	foreach ($pages as $page) : 
 		
-		$page_mood = $page->mood;
-		$date=date('d M Y', strtotime($page->date)); // Gather's the date used when seperating messages
-		$date_month=date('M', strtotime($page->date));    // Gather's the month used when seperating messages by day
+		$page_mood = $page->mood;						// Collects the mood that the person were in when they posted the page.
+		$page_text = substr($page->text,0, 50);
+		$date=date('d M Y', strtotime($page->date));	// Gather's the date used when seperating messages
+		$date_month=date('M', strtotime($page->date));  // Gather's the month used when seperating messages by day
 		
 		if ($date_month_check !== $date_month) {
 
@@ -65,7 +66,7 @@
 		}
 
 		echo '</div>';
-		echo '<div class="page-preview-body">The 50 first characters' . '...' . '</div>';
+		echo '<div class="page-preview-body">'. $page_text . '...' . '</div>';
 		echo '</a>';
 
 
