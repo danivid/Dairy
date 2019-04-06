@@ -7,6 +7,14 @@
     max-width: 220rem;
 }
 
+.home .home-empty-state {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+}
+
 .home .page-preview-grid {
     grid-template-columns: 1fr;
     grid-gap: $spacing-4;
