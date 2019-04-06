@@ -5,12 +5,13 @@ class Page extends Db_object{
 	protected static $db_table = "page"; 
 
 	protected static $db_table_fields = array('user_id', 'text', 'mood', 'date');
+	public $id;
 	public $user_id;
 	public $text;
 	public $mood;
 	public $date;
 
-	public static function find_pages($user_id, $type, $date) {
+	public static function find_pages($user_id) {
 
 		global $database;
 		$user_id = $database->escape_string($user_id);

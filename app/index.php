@@ -10,11 +10,14 @@
         <?php include("includes/views/navbar.php") ?>
 
         <!-- IF LOGGED IN -->
-        <?php // true ? include("app/includes/views/home.php") : include("app/includes/views/welcome.php") ?>
+        <?php $session->is_signed_in() ? include("includes/views/home.php") : include("includes/views/welcome.php") ?>
 
         <!-- IF LOGGED IN -->
         <?php // true && include("app/includes/views/filter.php") ?>
-    </main>
+
+        <?php include("includes/views/page.php"); ?>
+
+    <main>
 
     <?php include("includes/views/footer.php") ?>
 </body>

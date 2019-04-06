@@ -9,15 +9,15 @@
             <?php
                 // DEPENDING ON MOOD LEVEL ROUNDED TO CLOSEST
                 if (true) {
-                    echo " -very-happy";
+                    echo ' -very-happy';
                 } else if (true) {
-                    echo " -happy";
+                    echo ' -happy';
                 } else if (true) {
-                    echo " -neutral";
+                    echo ' -neutral';
                 } else if (true) {
-                    echo " -sad";
+                    echo ' -sad';
                 } else if (true) {
-                    echo " -very-sad";
+                    echo ' -very-sad';
                 }
             ?>
             "
@@ -42,6 +42,9 @@
     <div id="sign" class="sign">
         <!-- IF SIGNED IN -->
         <?php echo true ? "<div id=\"SIGN_IN\" class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-in-alt\"></i>" : "<div class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-out-alt\"></i>" ?></div>
+
+        <div class="sign-icon modal"><?php echo $session->is_signed_in() ? "<i class=\"fas fa-fw fa-sign-in-alt\"></i>" : "<i class=\"fas fa-fw fa-sign-out-alt\"></i>" ?></div>
+  
     </div>
 </div>
 
