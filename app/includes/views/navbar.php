@@ -7,7 +7,7 @@
          $rounded_avg = 0;
         if ($session->is_signed_in()) {
             $user_id = $session->user_id;
-            $avg = Page::find_mood_average(1);
+            $avg = Page::find_mood_average($user_id);
             $rounded_avg = round($avg);
             echo $rounded_avg;
         } ?>
@@ -50,7 +50,7 @@
 
     <div id="sign" class="sign">
         <!-- IF SIGNED IN -->
-        <?php echo $session->is_signed_in() ? "<div id=\"SIGN_IN\" class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-in-alt\"></i>" : "<div class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-out-alt\"></i>" ?></div>
+        <?php echo $session->is_signed_in() ? "<a href='logout.php'><div class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-out-alt\"></i></a>" : "<div id=\"SIGN_IN\" class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-in-alt\"></i>" ?></div>
     </div>
 </div>
 
