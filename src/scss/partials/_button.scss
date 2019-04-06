@@ -10,31 +10,28 @@ input[type="submit"] {
 
 	transition: border-color 0.2s, background-color 0.2s, color 0.2s;
 
-	border: 0.1rem solid $color-primary-500;
-	border-radius: 0.4rem;
-	padding: 0 3rem;
-	height: 3.8rem;
+	border: $border-1 solid $color-grayscale-600;
+	border-radius: $border-radius-rounded;
+	padding: $spacing-3 $spacing-4;
 
-	background-color: $color-primary-500;
+	background-color: $color-grayscale-600;
 	cursor: pointer;
 	user-select: none;
 
-	font-size: 1.1rem;
-	line-height: 3.8rem;
-	font-weight: 700;
-	text-align: center;
+	font-size: $font-size-1;
+	font-weight: 500;
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
-	letter-spacing: 0.1rem;
-	color: white;
+	letter-spacing: $letter-spacing-open;
+	color: $color-light;
 
 	&:focus,
 	&:hover {
 		outline: 0;
-		border-color: $color-secondary-500;
+		border-color: $color-grayscale-700;
 
-		background-color: $color-secondary-500;
+		background-color: $color-grayscale-700;
 	}
 
 	&:active {
@@ -49,24 +46,24 @@ input[type="submit"] {
 
 		&:focus,
 		&:hover {
-			border-color: $color-primary-500;
+			border-color: $color-grayscale-400;
 
-			background-color: $color-primary-500;
+			background-color: $color-grayscale-400;
 		}
 	}
 
-	&.button-outline {
+	&.-outline {
 		background-color: transparent;
 
-		color: $color-primary-500;
+		color: $color-grayscale-600;
 
 		&:focus,
 		&:hover {
-			border-color: $color-secondary-500;
+			border-color: $color-grayscale-700;
 
 			background-color: transparent;
 
-			color: $color-secondary-500;
+			color: $color-grayscale-700;
 		}
 
 		&[disabled] {
@@ -74,31 +71,31 @@ input[type="submit"] {
 			&:hover {
 				border-color: inherit;
 
-				color: $color-primary-500;
+				color: $color-grayscale-400;
 			}
 		}
 	}
 
-	&.button-clear {
+	&.-clear {
 		border-color: transparent;
 
 		background-color: transparent;
 
-		color: $color-primary-500;
+		color: $color-grayscale-600;
 
 		&:focus,
 		&:hover {
 			border-color: transparent;
 
-			background-color: transparent;
+			background-color: rgba($color-grayscale-500, $opacity-2);
 
-			color: $color-secondary-500;
+			color: $color-grayscale-700;
 		}
 
 		&[disabled] {
 			&:focus,
 			&:hover {
-				color: $color-primary-500;
+				color: $color-grayscale-400;
 			}
 		}
 	}
