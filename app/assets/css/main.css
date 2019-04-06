@@ -418,8 +418,8 @@ a {
     display: block; }
     .modal.-show > .modal-frame {
       display: block;
-      -webkit-animation: modal 1s;
-              animation: modal 1s; }
+      -webkit-animation: modal 0.5s;
+              animation: modal 0.5s; }
   .modal .modal-frame {
     z-index: 1001;
     position: absolute;

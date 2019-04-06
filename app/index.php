@@ -5,7 +5,7 @@
 <?php include("includes/helpers/head.php") ?>
 <body>
     <main>
-        <?php include("includes/views/modal.php") ?>
+        <?php include("includes/views/loginmodal.php") ?>
 
         <?php include("includes/views/navbar.php") ?>
 

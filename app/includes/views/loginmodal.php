@@ -1,9 +1,9 @@
-<div class="modal">
+<div class="modal" id="LOGIN_MODAL">
     <div class="modal-frame">
         <form action="post" class="form">
             <div class="modal-header">
                 <div>Welcome!</div>
-                <div class="close"></div>
+                <div class="close" id="LOGIN_MODAL_CLOSE"></div>
             </div>
 
             <div class="modal-body">
