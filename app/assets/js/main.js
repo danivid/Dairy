@@ -49,7 +49,6 @@ function save_page() {
 const SIGN_IN = document.getElementById('SIGN_IN');
 const LOGIN_MODAL = document.getElementById('LOGIN_MODAL');
 const LOGIN_MODAL_CLOSE = document.getElementById('LOGIN_MODAL_CLOSE');
-const LOGIN_MODAL_BACKDROP =
 
 SIGN_IN.addEventListener('click', e => {
     LOGIN_MODAL.classList.toggle('-show');

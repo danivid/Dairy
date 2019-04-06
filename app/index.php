@@ -15,7 +15,7 @@
         <!-- IF LOGGED IN -->
         <?php // true && include("app/includes/views/filter.php") ?>
 
-        <?php include("includes/views/page.php"); ?>
+        <?php //include("includes/views/page.php"); ?>
 
     <main>
 
