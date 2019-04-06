@@ -1,8 +1,9 @@
 <?php 
 
 /**
- * The page class
- *
+ * The page class holds the object class that controls the 
+ * page-objects, the pages are where the user writes and
+ * is stored in the database.
  */
 
 class Page extends Db_object{
@@ -16,6 +17,11 @@ class Page extends Db_object{
 	public $mood;
 	public $date;
 
+	/**
+	 * This class finds all of the pages that the user have,
+	 * and then places it in the object-array that awaits where
+	 * it is called.
+	 */
 	public static function find_pages($user_id) {
 
 		global $database;
@@ -23,7 +29,7 @@ class Page extends Db_object{
 
 		$sql = "SELECT * FROM " . self::$db_table . " WHERE ";
 		$sql .= "user_id = '{$user_id}' ";
-		$sql .= "ORDER BY date";
+		$sql .= "ORDER BY date DESC";
 
 		return static::find_by_query($sql);
 
@@ -31,7 +37,7 @@ class Page extends Db_object{
 
 	/**
 	 * The method that collects the average in mood between
-	 * a start-date and a end-date.
+	 * a start-date and a end-date. Is not yet used.
 	 */
 	public static function find_mood_in_period($startdate, $enddate) {
 
@@ -46,8 +52,9 @@ class Page extends Db_object{
 	}
 
 	/**
-	 * The method that collects the average in mood between
-	 * a start-date and a end-date.
+	 * This method collects the average mood out of all the 
+	 * pages and is used to color and choose the face in the 
+	 * navbar.
 	 */
 	public static function find_mood_average($user_id) {
 

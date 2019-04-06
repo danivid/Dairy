@@ -1,19 +1,19 @@
 <?php require_once("includes/init.php"); 
 
+// If the user fills in the login form and presses enter or submit.
 if (isset($_POST['submit'])) {
 
     $username = trim($_POST['username']); 
     $password = trim($_POST['password']);
 
+    // Method in the user-class that checks if there is a user with this username and password in the database.
     $user_found = User::verify_user($username, $password);
 
     if ($user_found) {
         $session->login($user_found);
         redirect("index.php");
 
-    } else {
-        echo "error";
-    }
+    } 
 } else {
     $username = "";
     $password = "";
@@ -35,8 +35,6 @@ if (isset($_POST['submit'])) {
 
         <!-- IF LOGGED IN -->
         <?php // true && include("app/includes/views/filter.php") ?>
-
-        <?php //include("includes/views/page.php"); ?>
 
     <main>
 

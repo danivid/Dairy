@@ -1,107 +1,78 @@
-<?php
-	$pages = Page::find_pages(1);
-
-	foreach ($pages as $page) :
-
-		echo $page->text;
-
-	endforeach;
-?>
-
 <div class="home">
+<!--echo '<a href="pag" class="new-page"><i class="fas fa-fw fa-plus"></i></a>';-->
+<?php
+	$date_month_check = 0;								// Used to check if the month is the same as the month for the page previous.
+	$check = 0;											// Used as a rushed try to fix this page. 
+	$pages = Page::find_pages($session->user_id);
+	foreach ($pages as $page) : 
+		
+		$page_mood = $page->mood;						// Collects the mood that the person were in when they posted the page.
+		$page_text = substr($page->text,0, 50);
+		$date=date('d M Y', strtotime($page->date));	// Gather's the date used when seperating messages
+		$date_month=date('M', strtotime($page->date));  // Gather's the month used when seperating messages by day
+		
+		if ($date_month_check !== $date_month) {
 
-	<hr data-content="October">
+			if ($check != 0) {							// If $check is not zero, then echo a end to page-previous-grid.
+				echo '</div>';
+			}
+			$check = 1;									// To make sure that the /div goes trough next time.
 
-	<div class="page-preview-grid">
+			echo '<hr data-content="' . $date_month .'">';
+			echo '<div class="page-preview-grid">';
+			
+		}
 
-		<a href="pag" class="new-page"><i class="fas fa-fw fa-plus"></i></a>
+		switch ($page_mood) {							// Places here the color in the classlist of the page-preview.
+			case 1:
+				$mood = " -very-sad";
+				break;
+			case 2:
+				$mood = " -sad";
+				break;
+			case 3:
+				$mood = " -neutral";
+				break;
+			case 4:
+				$mood = " -happy";
+				break;
+			case 5:
+				$mood = " -very-happy";
+				break;
+			
+			default:
+				$mood = " -neutral";
+				break;
+		}
 
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -neutral">
-				<span>29 Oct 2019</span>
-				<i class="fas fa-fw fa-meh"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
+		echo '<a href="page" class="page-preview">';
+		echo '<div class="page-preview-header ' . $mood . '">';
+		echo '<span>' . $date . '</span>';
 
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -sad">
-				<span>28 Oct 2019</span>
-				<i class="fas fa-fw fa-frown"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
+		// Decides which of the smiles will be used on the current card.
+		if ($page_mood == 5) {
+			echo "<i class=\"fas fa-fw fa-laugh-beam\"></i>";
+		} else if ($page_mood == 4) {
+			echo "<i class=\"fas fa-fw fa-smile\"></i>";
+		} else if ($page_mood == 3) {
+			echo "<i class=\"fas fa-fw fa-meh\"></i>";
+		} else if ($page_mood == 2) {
+			echo "<i class=\"fas fa-fw fa-frown\"></i>";
+		} else if ($page_mood == 1) {
+			echo "<i class=\"fas fa-fw fa-sad-cry\"></i>";
+		}
 
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -very-happy">
-				<span>27 Oct 2019</span>
-				<i class="fas fa-fw fa-laugh-beam"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
+		echo '</div>';
+		echo '<div class="page-preview-body">'. $page_text . '...' . '</div>';
+		echo '</a>';
 
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -very-sad">
-				<span>26 Oct 2019</span>
-				<i class="fas fa-fw fa-sad-cry"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
+		// Make's the date_month_check equal to the date_month.
+		$date_month_check = $date_month;
+		?>
 
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -happy">
-				<span>25 Oct 2019</span>
-				<i class="fas fa-fw fa-smile"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
-
-	</div>
-
-	<hr data-content="September">
-
-	<div class="page-preview-grid">
-
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -neutral">
-				<span>29 Oct 2019</span>
-				<i class="fas fa-fw fa-meh"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
-
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -sad">
-				<span>28 Oct 2019</span>
-				<i class="fas fa-fw fa-frown"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
-
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -very-happy">
-				<span>27 Oct 2019</span>
-				<i class="fas fa-fw fa-laugh-beam"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
-
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -very-sad">
-				<span>26 Oct 2019</span>
-				<i class="fas fa-fw fa-sad-cry"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
-
-		<a href="page" class="page-preview">
-			<div class="page-preview-header -happy">
-				<span>25 Oct 2019</span>
-				<i class="fas fa-fw fa-smile"></i>
-			</div>
-			<div class="page-preview-body">The 50 first characters + "..."</div>
-		</a>
-
-	</div>
+	<?php endforeach; ?>
 
 </div>
+
+
+

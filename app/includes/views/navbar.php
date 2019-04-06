@@ -7,12 +7,9 @@
             $user_image = $user->user_image;
         }
         ?>
-        <a class="home-icon" >
-        <input type="image" id="profile_image" onclick="change_image()" src="http://upload.wikimedia.org/wikipedia/commons/c/ca/Button-Lightblue.svg" width="30px"/>
-        <input type="file" id="picture_upload" style="display: none;" />
+        <a class="home-icon" href="profile.php" >
+        <img src="<?php echo $user_image; ?>" width="30px"/>
         </a>
-
-
 
         <!-- IF ON THIS PAGE -->
         <a <?php echo false ? "" : "href=\"index.php\"" ?> class="home-icon" ><?php echo true ? "<i class=\"fas fa-fw fa-book\"></i>" : "<i class=\"fas fa-fw fa-book-open\"></i>" ?></a>

@@ -44,7 +44,9 @@ class Database {
 		return $result;
 	}
 
-	//Sjekker om $result er gyldig
+	/**
+	 * Sjekker om $result fra query er gyldig.
+	 */
 	private function confirm_query($result) {
 
 		if(!$result) {

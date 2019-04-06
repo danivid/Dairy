@@ -2,10 +2,10 @@
 
 require_once("includes/init.php"); 
 
+// Collects the blob of text that the user have written..
 $blob = $_POST['editor_content'];
 
-echo $blob;
-
+// Makes a new page and places it in the database.
 $page = new page();
 $page->user_id = 1;
 $page->text = $blob;
