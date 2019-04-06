@@ -9,5 +9,6 @@ require_once("includes/helpers/database.php");
 require_once("includes/helpers/functions.php"); 
 require_once("includes/classes/db_object.php"); 
 require_once("includes/classes/session.php");
-require_once("includes/classes/user.php");       
+require_once("includes/classes/user.php"); 
+require_once("includes/classes/page.php");       
 ?>
