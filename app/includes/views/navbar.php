@@ -39,9 +39,9 @@
         </a>
     </nav>
 
-    <div id="sign" class="sign">
+    <div class="sign">
         <!-- IF SIGNED IN -->
-        <?php echo $session->is_signed_in() ? "<div id=\"SIGN_IN\" class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-in-alt\"></i>" : "<div class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-out-alt\"></i>" ?></div>
+        <?php echo !$session->is_signed_in() ? "<div id=\"SIGN_IN\" class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-in-alt\"></i>" : "<div class=\"sign-icon\"><i class=\"fas fa-fw fa-sign-out-alt\"></i>" ?></div>
     </div>
 </div>
 
