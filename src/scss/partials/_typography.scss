@@ -1,6 +1,11 @@
 // Typography
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
+body {
+	font-family: $font-family-stack;
+	font-size: $font-size-2;
+}
+
 b,
 strong {
 	font-weight: bold;

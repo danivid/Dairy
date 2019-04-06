@@ -39,9 +39,9 @@
         </a>
     </nav>
 
-    <div class="sign">
+    <div id="sign" class="sign">
         <!-- IF SIGNED IN -->
-        <div class="sign-icon modal"><?php echo true ? "<i class=\"fas fa-fw fa-sign-in-alt\"></i>" : "<i class=\"fas fa-fw fa-sign-out-alt\"></i>" ?></div>
+        <div class="sign-icon"><?php echo true ? "<i class=\"fas fa-fw fa-sign-in-alt\"></i>" : "<i class=\"fas fa-fw fa-sign-out-alt\"></i>" ?></div>
     </div>
 </div>
 

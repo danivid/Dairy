@@ -1,0 +1,43 @@
+// Close
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.close {
+    justify-content: flex-end;
+
+    display: flex;
+}
+
+.close-icon {
+    position: relative;
+
+    border-radius: $border-radius-round;
+    width: $size-5;
+    height: $size-5;
+
+    &:hover {
+        background: $color-negative-200;
+        &::after {
+            color: $color-light;
+        }
+    }
+
+    &:active {
+        background: $color-negative-100;
+        &::after {
+            color: $color-light;
+        }
+    }
+
+    &::after {
+        content: "x";
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -65%);
+
+        font-size: $font-size-4;
+        font-weight: $font-weight-normal;
+        color: $color-grayscale-800;
+    }
+}

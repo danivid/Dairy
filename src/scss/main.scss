@@ -4,10 +4,8 @@
 // Vendor
 @import "vendor/normalize";
 
-// Base
-@import "partials/base";
-
 // Modules
+@import "modules/animation";
 @import "modules/breakpoint";
 @import "modules/color";
 @import "modules/font";
@@ -16,11 +14,17 @@
 @import "modules/sizing";
 @import "modules/spacing";
 
+// Base
+@import "partials/base";
+
 // Partials
 @import "partials/button";
+@import "partials/close";
 @import "partials/divider";
+@import "partials/form";
 @import "partials/image";
 @import "partials/link";
+@import "partials/modal";
 @import "partials/navbar";
 @import "partials/spacing";
 @import "partials/typography";
