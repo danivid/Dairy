@@ -1,0 +1,119 @@
+// Home
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.home {
+    margin-left: $spacing-8;
+    padding: $spacing-4;
+    max-width: 220rem;
+}
+
+.home .page-preview-grid {
+    grid-template-columns: 1fr;
+    grid-gap: $spacing-4;
+
+    display: grid;
+}
+
+.home .page-preview {
+    display: block;
+
+    overflow: hidden;
+
+    border-radius: $border-radius-rounded;
+
+    background-color: $color-grayscale-200;
+    cursor: pointer;
+
+    & .page-preview-header {
+        justify-content: space-between;
+        align-items: center;
+
+        display: flex;
+
+        padding: $spacing-2 $spacing-3;
+
+        background-color: $color-grayscale-500;
+
+        font-size: $font-size-4;
+        font-weight: $font-weight-normal;
+        color: $color-light;
+
+
+        &.-very-happy {
+            background-color: rgb(0, 187, 0);
+        }
+
+        &.-happy {
+            background-color: rgb(0, 182, 112);
+        }
+
+        &.-neutral {
+            background-color: rgb(0, 224, 194);
+        }
+
+        &.-sad {
+            background-color: rgb(0, 128, 214);
+        }
+
+        &.-very-sad {
+            background-color: rgb(110, 70, 255);
+        }
+
+    }
+
+    & .page-preview-body {
+        display: block;
+
+        overflow: auto;
+
+        border: none;
+        padding: $spacing-2 $spacing-3;
+        width: 100%;
+
+        font-size: $font-size-6;
+        font-weight: $font-weight-normal;
+        color: $color-dark;
+    }
+}
+
+.home .new-page {
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+
+    border: $border-2 dashed $color-grayscale-500;
+    border-radius: $border-radius-rounded;
+
+    transition: 0.3s color, 0.3s border-color;
+
+    cursor: pointer;
+
+    font-size: $font-size-7;
+    color: $color-grayscale-500;
+
+    &:hover {
+        border-color: $color-dark;
+
+        color: $color-dark;
+    }
+}
+
+
+@media (min-width: $breakpoint-tablet) {
+    .home .page-preview-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: $breakpoint-laptop) {
+    .home .page-preview-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .home .page-preview-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
