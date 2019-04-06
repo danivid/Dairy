@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="form-buttons">
-                    <input type="submit" name="submit" id="submit" value="Sign up">
+                    <input type="submit" name="submitReg" id="submit" value="Sign up">
                 </div>
             </form>
         </div>

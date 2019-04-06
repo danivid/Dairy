@@ -1,5 +1,26 @@
 <?php require_once("includes/init.php"); 
 
+if (isset($_POST['submitReg'])) {
+     
+
+    $username = trim($_POST['username']); 
+    $password = trim($_POST['password']);
+
+    $error_array = User::verify_new_user($username, $password);    
+
+    if (empty($error_array)) {
+        
+        
+
+    }
+
+} else {
+
+        $username       = "";
+        $password       = "";
+        $the_message    = "";
+    }
+
 // If the user fills in the login form and presses enter or submit.
 if (isset($_POST['submit'])) {
 

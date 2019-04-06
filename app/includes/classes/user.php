@@ -79,18 +79,16 @@ class User extends Db_object{
 	 * @param $password_check
 	 * @return the error_array, empty if all is well.
 	 */
-	public static function verify_new_user($username, $password, $password_check) {
+	public static function verify_new_user($username, $password) {
 
 		global $database;
 
 		$error_array       = array();
 		$username          = $database->escape_string($username);
 		$password          = $database->escape_string($password);
-		$password_check    = $database->escape_string($password_check);
 
 		$username          = strip_tags($username);
 		$password          = strip_tags($password);
-		$password_check    = strip_tags($password_check);
 
 		$sql = "SELECT * FROM " . self::$db_table . " WHERE ";
 		$sql .= "username = '{$username}' ";
@@ -101,10 +99,6 @@ class User extends Db_object{
 
 		if (!empty($the_result_array)) {
 			array_push($error_array, "The username is already in use, pick something else!");
-		}
-
-		if($password != $password_check) { 
-			array_push($error_array,  "Your passwords do not match");
 		}
 		
 		if((strlen($password) > 50) || strlen($password) < 5) {  
@@ -119,7 +113,7 @@ class User extends Db_object{
 
 			$user->username    = $username;
 			$user->password    = $password;
-			$user->user_image  = "assets/img/bjørn.png";
+			$user->user_image  = "assets/img/profile/1.png";
 
 			$user->create();
 
